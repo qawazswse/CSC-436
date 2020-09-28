@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "travel-app"
+    }
+  },
+  "defaultProject": "travel-app",
+  "cli": {
+    "analytics": "d5b4421c-f738-402d-b118-622f8cce4697"
+  }
 }
