@@ -1,0 +1,51 @@
+<!--
+  Revision of class registration extended to transformation (|)
+  #name *ngIf [ngClass]
+-->
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <div class="form-row">
+    <div class="form-group col-md-4 mb-3">
+      <label>Origination Airport</label>
+      <input type="text" name="originationAirport" class="form-control" [(ngModel)]="model.originationAirport"
+        [ngClass]="{ 'is-invalid': myForm.submitted}" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-4 mb-3">
+      <label>Destination Airport</label>
+      <input type="text" class="form-control" name="destinationAirport" [(ngModel)]="model.destinationAirport"
+        [ngClass]="{ 'is-invalid': myForm.submitted}" email required>
+    </div>
+  </div>
+
+  <div class="form-row">
+
+    <div class="form-group col-md-4 mb-3">
+      <label>Date</label>
+      <input type="date" class="form-control" name="regdate" [(ngModel)]="model.regdate">
+    </div>
+
+    <div class="form-group col-md-4 mb-3">
+      {{model.regdate | date | uppercase}}
+    </div>
+    <div class="form-group col-md-4 mb-3">
+      {{ model.regdate | date:"MM/dd/yy"}}
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-4 mb-3">
+      <label># Of Travelers</label>
+      <input type="number" class="form-control" name="numOfTravelers" [(ngModel)]="model.numOfTravelers"
+             [ngClass]="{ 'is-invalid': myForm.submitted}" email required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary btn-block">Submit</button>
+  </div>
+
+</form>
+
+<p id="price">{{price}}</p>
