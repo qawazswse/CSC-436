@@ -2,13 +2,16 @@
     padding-right: 20px;
     background-color: brown;
 }
-div.leftRoute {
-  padding-right: 80%;
-  background-color: cornflowerblue;
-  outline-color: cornflowerblue;
-  outline-width: 10px;
+div.topRoute {
+  text-align: center;
+  padding: 1%;
 }
-div.rightContent {
-  padding-left: 20%;
+div.bottomContent {
   outline-color: cornflowerblue;
+}
+
+botton{
+  padding: 10px;
+  margin-left: 10px;
+  background-color: aqua;
 }
