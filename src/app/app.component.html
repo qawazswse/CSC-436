@@ -1,15 +1,19 @@
-<!doctype html>
-<html lang="en">
+<br>
+<div>
 
-  <body>
-    <h2>Welcome {{title}}</h2>
-
-    <p>OS: Windows</p>
-
-    <p>IDE: VS Code</p>
-
-    <div class="container">
-      <app-travelrequest></app-travelrequest>
-    </div>
-  </body>
-</html>
+    <nav>
+        <div id="navbarNav" class="leftRoute">
+            <ul>
+                <li>
+                    <a class="nav-link" [routerLink]="['/about']">about</a>
+                </li>
+                <li>
+                    <a class="nav-link" [routerLink]="['/travel_request']">travel Request</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <div class="rightContent">
+    <router-outlet></router-outlet>
+  </div>
+</div>

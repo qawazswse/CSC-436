@@ -1,0 +1,14 @@
+#nav {
+    padding-right: 20px;
+    background-color: brown;
+}
+div.leftRoute {
+  padding-right: 80%;
+  background-color: cornflowerblue;
+  outline-color: cornflowerblue;
+  outline-width: 10px;
+}
+div.rightContent {
+  padding-left: 20%;
+  outline-color: cornflowerblue;
+}
